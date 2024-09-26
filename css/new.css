@@ -274,6 +274,13 @@ a, button {
     z-index: 20;
 }
 
+@media (min-width: 1500px) {
+
+    .flex-items {
+        justify-content: center !important;
+    }
+}
+
 @media (min-width: 2000px) {
     .section-meet {
         padding-block: 80px;
