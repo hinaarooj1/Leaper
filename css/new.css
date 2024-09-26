@@ -280,6 +280,10 @@ a, button {
 
     }
 
+    .flex-items {
+        justify-content: center !important;
+    }
+
 }
 
 @media (min-width: 768px) {
