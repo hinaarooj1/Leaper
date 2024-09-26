@@ -1,0 +1,345 @@
+.top-banner {
+    min-height: 100vh;
+    background-image: url(../img/assets/top\ banner.png);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a, button {
+    cursor: pointer !important;
+}
+
+.section-width {
+    max-width: 2000px;
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 20px;
+
+}
+
+.section-smoke {
+    /* background-image: url(../img/assets/lepernomics.png); */
+    background-size: cover;
+    /* Ensures the image covers the entire container */
+    background-position: center;
+    /* Keeps the image centered */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    width: 100%;
+    /* Ensures the container takes full width */
+    height: 100vh;
+    /* background-position: center bottom; */
+}
+
+.abs-bg {
+    position: absolute;
+
+    width: 100%;
+
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.h-100a {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.locker-leper img,
+.buy-leper img {
+    width: 200px;
+}
+
+.buy-leper {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.locker-leper {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+}
+
+.lpr-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.lpr-btn img {
+    width: 200px;
+}
+
+.social-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    list-style: none;
+}
+
+.social-list li a img {
+    width: 4rem;
+}
+
+.section-meet {
+    padding-block: 50px;
+
+}
+
+.bg-sec2 {
+    background-image: url(../img/assets/secbg.png);
+    background-size: cover;
+    background-position: right center;
+}
+
+.flex-items {
+    display: flex;
+    justify-content: left;
+    /* align-items: center */
+    gap: 100px;
+}
+
+.flex-img img {
+    width: 455px;
+    position: absolute;
+}
+
+.flex-img {
+    position: relative;
+    width: 30%;
+}
+
+.flex-text {
+    width: 600px;
+}
+
+.flex-text-h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.flex-text-p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.div-sm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 490px;
+    margin: auto;
+    text-align: center;
+}
+
+.div-sm
+/* .center-logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+} */
+
+.center-logo-img {
+
+    width: 22vw !important;
+}
+
+
+/*  */
+.pt-\[100px\] {
+    padding-top: 100px;
+}
+
+.p-5 {
+    padding: 1.25rem;
+}
+
+.max-w-\[2000px\] {
+    max-width: 2000px;
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.relative {
+    position: relative;
+}
+
+.pt-\[10px\] {
+    padding-top: 10px;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+
+.size-\[50vh\] {
+    width: 40vh;
+    height: 40vh;
+}
+
+.z-20 {
+    z-index: 20;
+}
+
+.opacity-\[1\] {
+    opacity: 1;
+}
+
+.object-contain {
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.text-\[18px\] {
+    font-size: 18px;
+}
+
+.mt-5 {
+    margin-top: 1.25rem;
+}
+
+
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.mt-14 {
+    margin-top: 3.5rem;
+}
+
+.z-\[20\] {
+    z-index: 20;
+}
+
+@media (min-width: 2000px) {
+    .section-meet {
+        padding-block: 80px;
+
+    }
+
+}
+
+@media (min-width: 768px) {
+    .md\:px-14 {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:pt-0 {
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:size-\[58vh\] {
+        width: 40vh;
+        height: 40vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:text-\[27px\] {
+        font-size: 27px;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:justify-between {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:mt-0 {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:right-14 {
+        right: 3.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:left-14 {
+        left: 3.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:bottom-14 {
+        bottom: 3.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:absolute {
+        position: absolute;
+    }
+}

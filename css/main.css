@@ -1,0 +1,196 @@
+@font-face {
+    font-family: Tim Kid;
+    src: local("Tim Kid"), url(../font/TimKid.ttf) format("truetype");
+    font-weight: 400
+}
+
+:root {
+    font-family: Tim Kid;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: #ffffffde;
+    background-color: #242424;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+
+a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: inherit;
+    cursor: inherit;
+}
+
+a, button, select, textarea, input {
+    cursor: none !important;
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+
+
+    place-items: center;
+    min-height: 100vh
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: .6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    /* cursor: pointer; */
+    /* transition: border-color .25s */
+}
+
+/* Custom cursor */
+/* #cursor {
+    position: absolute;
+    width: 40px;
+    left: 0;
+    right: 0;
+
+    height: 40px;
+    background-image: url('../img/clover.svg');
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 999999999999999999999;
+    transition: transform 0.1s ease;
+}
+ 
+#clickEffect {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+     
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 999999;
+    animation: click-animation 0.5s ease-out;
+} */
+
+@keyframes click-animation {
+    from {
+        background-color: rgba(0, 255, 0, 0.5);
+
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(2);
+        background-color: rgba(0, 255, 0, 0.5);
+        opacity: 0;
+    }
+}
+
+/* Marquee styling */
+/* #marquee, #marquee2 {
+    white-space: nowrap;
+    overflow: hidden;
+} */
+
+/* Navbar active state */
+.active-nav {
+    /* Styles for when the navbar is active */
+}
+
+.active-x {
+    /* Styles for the toggle button */
+}
+
+
+@media (max-width: 900px) {
+    body {
+        cursor: initial !important;
+    }
+
+    /* Custom cursor */
+    #cursor {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+        pointer-events: none;
+        user-select: none;
+        z-index: 1000;
+        transition: transform 0.1s ease, font-size 0.1s ease;
+        display: none !important;
+        z-index: 999999999999;
+    }
+
+    /* Click effect */
+    #clickEffect {
+        display: none !important;
+        z-index: 99999999999;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: rgba(0, 128, 0, 0.4);
+        /* Green semi-transparent ripple */
+        transform: translate(-50%, -50%) scale(0);
+        pointer-events: none;
+        z-index: 999;
+        animation: ripple 0.6s ease-out;
+    }
+
+}
+
+/* Ripple animation */
+@keyframes ripple {
+    from {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
+    }
+}
+
+@keyframes ripple2 {
+    from {
+        scale: 1;
+        opacity: 1;
+    }
+
+    to {
+        scale: 2;
+        opacity: 0;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #fff
+    }
+
+    a:hover {
+        color: #747bff
+    }
+
+    /* button {
+        background-color: #f9f9f9
+    } */
+}
