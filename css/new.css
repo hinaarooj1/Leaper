@@ -24,7 +24,7 @@ a, button {
 }
 
 .section-smoke {
-    /* background-image: url(../img/assets/lepernomics.png); */
+    background-image: url(../img/assets/lepernomics.png);
     background-size: cover;
     /* Ensures the image covers the entire container */
     background-position: center;
@@ -223,7 +223,7 @@ a, button {
 }
 
 .larry-smoke img {
-    width: 100vh;
+    width: 87vh;
 }
 
 .larry-smoke {
@@ -574,6 +574,10 @@ a, button {
     z-index: 20;
 }
 
+.mbl-only {
+    display: none
+}
+
 @media (min-width: 1500px) {
 
     .flex-items {
@@ -891,26 +895,9 @@ a, button {
         display: block;
     }
 
-    .section-smoke {
-        height: auto;
 
-        background-image: url(../img/assets/bgsmoke.gif);
-        background-size: cover;
-        background-position: top;
-        background-repeat: no-repeat;
-        width: 100%;
-        min-height: 900px;
-        /* background-position: center bottom; */
-    }
 
-    .section-smoke .flex-smoke-h1,
-    .section-smoke .flex-smoke-p {
-        color: black;
-    }
 
-    .section-smoke .abs-bg {
-        display: none;
-    }
 
     .flex-fours {
         position: relative;
@@ -940,9 +927,47 @@ a, button {
 }
 
 @media (max-width:768px) {
+    .mbl-only {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .mbl-only img {
+        border-radius: 20px;
+        width: 80%;
+
+    }
+
+    .cig-sec .flex-smoke-p {
+        font-size: 18px;
+    }
+
+    .section-smoke {
+        height: auto;
+
+        background-image: none;
+        background-color: #112717;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: auto;
+        /* background-position: center bottom; */
+    }
+
+    .flex-smoke-h1 {
+        font-size: 38px;
+    }
+
+    .section-smoke .flex-smoke-h1,
     .section-smoke .flex-smoke-p {
-        font-size: 23px;
+        /* color: black; */
+    }
+
+    .section-smoke .flex-smoke-p {
+        font-size: 18px;
         line-height: 24px;
+        padding-inline: 15px;
         margin-bottom: 25px;
     }
 
