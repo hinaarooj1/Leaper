@@ -709,6 +709,7 @@ a, button {
         width: 300px;
     }
 
+
     .cig-sec .flex-smoke-p,
 
     .section-smoke .flex-smoke-p,
@@ -934,12 +935,25 @@ a, button {
 }
 
 @media (max-width:768px) {
+    .section-smoke .flex-smoke-p {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
     .footer-area .flex-smoke-h1 {
         font-size: 30px;
     }
 
+    .bg-sec2 {
+        background-position: center;
+    }
+
     .footer-area .flex-smoke-p {
         font-size: 18px;
+    }
+
+    .footer-area .social-list li a img {
+        width: 3.5rem !important;
     }
 
     .other-links h1 {
@@ -1079,7 +1093,7 @@ a, button {
         font-size: 23px;
     }
 
-    .flex-smoke-p {
+    .footer-area .flex-smoke-p {
         font-size: 15px;
     }
 
