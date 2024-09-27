@@ -74,7 +74,7 @@ a, button {
     outline: none;
     position: absolute;
     right: 20px;
-    bottom: 100px;
+    bottom: 30px;
 }
 
 .lpr-btn {
@@ -334,7 +334,8 @@ a, button {
 }
 
 .doJPrk.newdog.bot {
-    bottom: -1px !important;
+    top: -0px !important;
+    bottom: auto !important;
 }
 
 .doJPrk.newdog {
@@ -927,9 +928,9 @@ a, button {
         width: 400px !important;
     }
 
-    .locker-leper {
+    /* .locker-leper {
         bottom: 70px;
-    }
+    } */
 
 
 }
@@ -1065,9 +1066,9 @@ a, button {
         width: 3rem;
     }
 
-    .locker-leper {
+    /* .locker-leper {
         bottom: 70px;
-    }
+    } */
 
     .center-logo {
         text-align: center;
