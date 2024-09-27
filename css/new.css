@@ -938,6 +938,7 @@ a, button {
 @media (max-width:768px) {
     .section-smoke .flex-smoke-p {
         font-size: 26px;
+        line-height: 28px;
         margin-bottom: 25px;
     }
 
