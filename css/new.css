@@ -281,9 +281,19 @@ a, button {
     color: black;
 }
 
+.tokea {
+    position: absolute;
+    width: -webkit-fill-available;
+    z-index: 0;
+}
+
+.z10 {
+    z-index: 10;
+}
+
 .tokenaddress {
     /* padding-block: 20px; */
-    background-image: url(../img/assets/token\ address.png);
+    /* background-image: url(../img/assets/token\ address.png); */
     background-size: 100%;
     width: 100%;
     height: 82px;
@@ -640,6 +650,276 @@ a, button {
     }
 }
 
+@media (min-width:2200px) {
+    .new-max .flex-card-h1 {
+        font-size: 50px;
+
+    }
+
+    .flex-item-new .lpr-btn img {
+        width: auto !important;
+        height: 118px;
+    }
+
+    .flex-item-new {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .new-max .flex-card-p {
+        font-size: 22px;
+
+    }
+
+    .flex-fours {
+        align-items: stretch;
+    }
+
+    .new-max {
+        max-width: 1300px;
+    }
+
+    .flex-fours .single-four {
+        max-width: 610px;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .tokenaddress span.kg {
+        font-size: 25px;
+    }
+
+    .tokenaddress span {
+        font-size: 22px;
+    }
+
+    .cig-sec .flex-smoke-h1,
+    .section-smoke .flex-smoke-h1,
+    .sec-this .flex-text-h1 {
+        font-size: 80px;
+    }
+
+    .flex-cont {
+        width: 800px;
+    }
+
+    .cig-sec .lpr-btn img {
+        width: 300px;
+    }
+
+    .cig-sec .flex-smoke-p,
+
+    .section-smoke .flex-smoke-p,
+    .sec-this .flex-text-p {
+        font-size: 30px;
+    }
+
+    .flex-text {
+        width: 800px;
+    }
+
+    .flex-img img {
+        width: 680px;
+    }
+
+    .flex-items {
+        gap: 200px;
+    }
+
+    .sec-this .lpr-btn img {
+        width: 300px;
+    }
+
+    .div-sm {
+        margin-top: 50px;
+        max-width: 900px;
+    }
+
+    .latkya {
+        width: 600px;
+    }
+
+}
+
+@media (min-width:3200px) {
+
+    .cig-sec .flex-smoke-h1 {
+        font-size: 120px;
+    }
+
+    .flex-cont {
+        width: 1800px;
+    }
+
+    .cig-sec .lpr-btn img {
+        width: 500px;
+    }
+
+    .cig-sec .flex-smoke-p {
+        font-size: 80px;
+    }
+
+    /*  */
+    .new-max .flex-card-h1 {
+        font-size: 60px;
+
+    }
+
+    .latkya {
+        width: 1000px;
+    }
+
+    .flex-item-new .lpr-btn img {
+        width: auto !important;
+        height: 168px;
+    }
+
+    .flex-item-new {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .new-max .flex-card-p {
+        font-size: 28px;
+
+    }
+
+    .flex-fours {
+        align-items: stretch;
+    }
+
+    .new-max {
+        max-width: 1800px;
+    }
+
+    .flex-fours .single-four {
+        max-width: 790px;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .tokenaddress span.kg {
+        font-size: 32px;
+    }
+
+    .tokenaddress span {
+        font-size: 28px;
+    }
+
+
+    .div-sm {
+        margin-top: 150px;
+        max-width: 1000px;
+    }
+
+    .section-smoke .flex-smoke-h1 {
+        font-size: 100px;
+    }
+
+    .section-smoke .flex-smoke-p {
+        font-size: 50px;
+    }
+
+    .sec-this .flex-text-h1 {
+        font-size: 80px;
+    }
+
+    .sec-this .flex-text-p {
+        font-size: 30px;
+    }
+
+    .flex-text {
+        width: 1000px;
+    }
+
+    .flex-img img {
+        width: 630px;
+    }
+
+    .flex-items {
+        gap: 200px;
+    }
+}
+
+@media (max-width:1200px) {
+    .footer-area {
+        background-position: left bottom;
+    }
+
+    .larry-smoke img {
+        height: auto;
+        width: 700px;
+    }
+
+    .cig-sec {
+        height: auto;
+    }
+
+    .cloud {
+        z-index: 9;
+    }
+
+    .flex-cont .lpr-btn {
+        text-align: center;
+    }
+
+    .flex-cont {
+        text-align:
+            center;
+        position: static;
+        margin: auto;
+        padding-top: 120px;
+        transform: none;
+        justify-content: center;
+    }
+
+    .larry-smoke {
+        position: relative;
+    }
+
+    .cig-sec {
+        display: block;
+    }
+
+    .section-smoke {
+        height: auto;
+
+        background-image: url(../img/assets/bgsmoke.gif);
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 900px;
+        /* background-position: center bottom; */
+    }
+
+    .section-smoke .flex-smoke-h1,
+    .section-smoke .flex-smoke-p {
+        color: black;
+    }
+
+    .section-smoke .abs-bg {
+        display: none;
+    }
+
+    .flex-fours {
+        position: relative;
+        z-index: 9;
+    }
+
+    .flex-img img {
+        width: 300px;
+    }
+
+    .abs-bg {
+        display: none;
+    }
+}
+
 /*  */
 @media (max-width:1000px) {
     .center-logo-img {
@@ -650,9 +930,119 @@ a, button {
         bottom: 70px;
     }
 
+
 }
 
 @media (max-width:768px) {
+    .footer-area .flex-smoke-h1 {
+        font-size: 30px;
+    }
+
+    .footer-area .flex-smoke-p {
+        font-size: 18px;
+    }
+
+    .other-links h1 {
+        font-size: 22px;
+    }
+
+    .other-lo li a {
+        font-size: 15px;
+    }
+
+    .footer-area {
+        background-image: none;
+        background-color: #00713a;
+
+        min-height: auto;
+    }
+
+    .bottom-dex {
+        padding-bottom: 40px;
+    }
+
+    .paddinb {
+        height: auto;
+        min-height: auto;
+        gap: 50px;
+        padding-left: 0 !important;
+        padding-block: 0 !important;
+        padding-top: 50px !important;
+    }
+
+    .botma,
+    .bottom-dex {
+        padding-inline: 20px !important;
+
+    }
+
+    .other-links {
+
+        background-color: #004e28;
+        width: 100%;
+        bottom: 0;
+        padding-block: 30px;
+        padding-inline: 20px;
+    }
+
+    .cloud {
+        display: none;
+        z-index: 9;
+    }
+
+    .larry-smoke {
+        text-align: center;
+    }
+
+    .cig-sec {
+        background-image: none;
+    }
+
+    .flex-cont {
+        width: 90%;
+    }
+
+    .larry-smoke img {
+        width: 100%;
+    }
+
+    .flex-items {
+        flex-direction: column;
+    }
+
+    .latkya {
+        display: none;
+    }
+
+    .flex-item-new {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-item-new .lpr-btn img {
+        height: auto;
+        width: 200px !important;
+    }
+
+    .flex-img img {
+        position: static;
+    }
+
+    .flex-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .flex-text {
+        width:
+            100%;
+    }
+
+    .sec-this .lpr-btn {
+        width: 100%;
+    }
+
     .locker-leper img, .buy-leper img {
         width: 150px;
     }
@@ -677,6 +1067,30 @@ a, button {
 
         left: 4px;
         top: 11px;
+    }
+
+    .flex-fours {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width:450px) {
+    .footer-area .flex-smoke-h1 {
+        font-size: 23px;
+    }
+
+    .flex-smoke-p {
+        font-size: 15px;
+    }
+
+    .tokenaddress {
+        flex-direction: row;
+        gap: 20px;
+        height: auto;
+    }
+
+    .flex-item-new .lpr-btn img {
+        width: 150px !important;
     }
 }
 
