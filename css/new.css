@@ -672,7 +672,7 @@ a, button {
 
 .rotate-it {
     display: inline-block;
-    animation: rotate 3s linear infinite;
+    /* animation: rotate 3s linear infinite; */
     transition: all 0.3s ease;
 }
 
