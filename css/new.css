@@ -111,9 +111,11 @@ a, button {
 }
 
 .bg-sec2 {
+    background-color: #00713a;
     background-image: url(../img/assets/secbg.png);
-    background-size: cover;
-    background-position: right center;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 .flex-items {
@@ -206,6 +208,10 @@ a, button {
 }
 
 .bottom-border {
+    border-bottom: 5px solid black;
+}
+
+.top-border {
     border-bottom: 5px solid black;
 }
 
@@ -600,6 +606,12 @@ a, button {
 .shake {
     display: inline-block;
     animation: shake 3s ease-in-out infinite;
+    transition: all 0.3s ease-in-out;
+}
+
+.shake:hover {
+    scale: 1.1 !important;
+    transition: all 0.3s ease-in-out;
 }
 
 .buy-it {
@@ -609,7 +621,7 @@ a, button {
 
 .buy-it:hover {
     transition: all 0.3s ease-in-out;
-    transform: scale(1.1);
+    transform: scale(1.1) !important;
 }
 
 /* Initial hidden state for the falling image */
@@ -645,6 +657,12 @@ a, button {
 .rotate-it {
     display: inline-block;
     animation: rotate 3s linear infinite;
+    transition: all 0.3s ease;
+}
+
+.rotate-it:hover {
+    scale: 1.1 !important;
+    transition: all 0.3s ease;
 }
 
 @keyframes rotate {
@@ -669,6 +687,37 @@ a, button {
     }
 }
 
+.rnd {
+    position: relative;
+    min-height: auto !important;
+    /* height: calc(auto - 100px); */
+}
+
+.lp-road-map img {
+    width: 80%;
+    margin: auto;
+}
+
+/* Button Styles */
+.rollbtn {
+    width: max-content;
+}
+
+.lp-road-map {
+    margin: auto;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    right: 0;
+    top: -100px;
+    position: relative;
+    z-index: 9;
+}
+
+.mbl-map {
+    display: none
+}
+
 @media (min-width: 1500px) {
 
     .flex-items {
@@ -680,6 +729,16 @@ a, button {
     .section-meet {
         padding-block: 80px;
 
+    }
+
+    .lp-road-map {
+        margin: auto;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        right: 0;
+        top: -8vh;
+        position: relative;
     }
 
     .flex-items {
@@ -844,7 +903,7 @@ a, button {
 
 }
 
-@media (min-width:3200px) {
+@media (min-width:3100px) {
 
     .cig-sec .flex-smoke-h1 {
         font-size: 120px;
@@ -869,7 +928,7 @@ a, button {
     }
 
     .latkya {
-        width: 1000px;
+        width: 1200px;
     }
 
     .flex-item-new .lpr-btn img {
@@ -1017,7 +1076,31 @@ a, button {
 
 }
 
+@media (max-width:1000px) {
+    .mbl-map {
+        padding-bottom: 100px;
+        display: block
+    }
+
+    .mbl-map img {
+
+        width: 100%;
+    }
+
+    .lp-road-map {
+        display: none !important;
+    }
+}
+
 @media (max-width:768px) {
+    .bottom-border {
+        border-bottom: 3px solid black;
+    }
+
+    .top-border {
+        border-top: 3px solid black;
+    }
+
     .mbl-only {
         display: block;
         margin-top: 30px;
@@ -1068,6 +1151,7 @@ a, button {
 
     .bg-sec2 {
         background-position: center;
+        background-image: none !important;
     }
 
     .footer-area .flex-smoke-p {

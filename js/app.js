@@ -84,9 +84,9 @@ window.onload = function () {
     const marquee2 = document.getElementById('marquee2');
     const marquee3 = document.getElementById('marquee3');
 
-    startMarquee(marquee1, 2); // Speed 1 for the first marquee
-    startMarquee(marquee2, 2); // Speed 2 for the second marquee
-    startMarquee(marquee3, 2); // Speed 2 for the second marquee
+    startMarquee(marquee1, 1); // Speed 1 for the first marquee
+    startMarquee(marquee2, 1); // Speed 2 for the second marquee
+    startMarquee(marquee3, 1); // Speed 2 for the second marquee
 };
 
 let toggleNav = () => {
