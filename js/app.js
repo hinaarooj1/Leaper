@@ -96,3 +96,59 @@ let toggleNav = () => {
     thisclick.classList.toggle('active-x')
 
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Create the IntersectionObserver
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                // Add the visible class when the image enters the viewport
+                entry.target.classList.add("visible");
+            } else {
+                // Remove the visible class if the element is not in the viewport (optional)
+                entry.target.classList.remove("visible");
+            }
+        });
+    });
+
+    // Target all elements with the 'fall-in' class
+    const fallInElements = document.querySelectorAll('.fall-in');
+    fallInElements.forEach((el) => observer.observe(el));
+});
+document.addEventListener("DOMContentLoaded", function () {
+    // Create the IntersectionObserver
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                // Add the visible class when the image enters the viewport
+                entry.target.classList.add("visible");
+            } else {
+                // Optionally, remove the class when it's out of view
+                entry.target.classList.remove("visible");
+            }
+        });
+    });
+
+    // Target the image with the 'latkya' class
+    const latkyaElement = document.querySelector('.asas');
+    observer.observe(latkyaElement);
+});
+document.addEventListener("DOMContentLoaded", function () {
+    // Create the IntersectionObserver
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                // Add the visible class when the image enters the viewport
+                entry.target.classList.add("issm");
+            } else {
+                // Optionally, remove the class when it's out of view
+
+            }
+        });
+    });
+
+    // Target the image with the 'latkya' class
+    const latkyaElement = document.querySelector('.cig-sec');
+    observer.observe(latkyaElement);
+});

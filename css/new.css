@@ -126,6 +126,7 @@ a, button {
 .flex-img img {
     width: 480px;
     position: absolute;
+    z-index: 9;
 }
 
 .flex-img {
@@ -216,6 +217,7 @@ a, button {
     background-position: center;
     display: flex;
     align-items: center;
+    overflow: hidden !important;
 }
 
 .cloud img {
@@ -229,8 +231,31 @@ a, button {
 .larry-smoke {
     position: absolute;
     left: 0px;
-    bottom: 0;
+    bottom: -100vw;
+    transition: all 0.5s ease-in-out;
+
 }
+
+.issm .larry-smoke {
+    transition: all 0.5s ease-in-out;
+    bottom: 0 !important;
+}
+
+.latkya {
+    position: absolute;
+    left: -100vw;
+    /* Start far off the left side of the screen */
+    transition: left 0.8s ease-out;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.visible.asas .latkya {
+    left: 0 !important;
+    /* Move it to the left side of the screen */
+}
+
 
 .smoke-flx {
     display: flex;
@@ -414,13 +439,7 @@ a, button {
     width: 420px;
 }
 
-.latkya {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
+
 
 .uppercase {
     text-transform: uppercase;
@@ -576,6 +595,78 @@ a, button {
 
 .mbl-only {
     display: none
+}
+
+.shake {
+    display: inline-block;
+    animation: shake 3s ease-in-out infinite;
+}
+
+.buy-it {
+
+    transition: all 0.3s ease-in-out;
+}
+
+.buy-it:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+/* Initial hidden state for the falling image */
+.fall-in {
+    opacity: 0;
+    transform: translateY(-100px);
+    /* Start position, above the viewport */
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+}
+
+/* Class added when the element is in view */
+.fall-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+    /* Moves back to its normal position */
+}
+
+
+@keyframes shake {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.rotate-it {
+    display: inline-block;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-8deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(8deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 @media (min-width: 1500px) {
