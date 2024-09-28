@@ -215,11 +215,27 @@ a, button {
     border-bottom: 5px solid black;
 }
 
+.tex-le img {
+    width: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    /* width: max-content !important; */
+    bottom: 0;
+    margin: auto;
+    z-index: 0;
+}
+
+.tex-le {}
+
 .cig-sec {
     height: 100vh;
     background-color: #112717;
     background-image: url(../img/assets/stars.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: repeat;
+
     background-position: center;
     display: flex;
     align-items: center;
@@ -904,6 +920,10 @@ a, button {
 }
 
 @media (min-width:3100px) {
+    .tex-le img {
+        width: 350px;
+
+    }
 
     .cig-sec .flex-smoke-h1 {
         font-size: 120px;
@@ -1230,6 +1250,7 @@ a, button {
         flex-direction: column;
     }
 
+    .tex-le,
     .latkya {
         display: none;
     }
